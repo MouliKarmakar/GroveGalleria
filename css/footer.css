@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:ital@1&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:ital,wght@1,100;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+footer {
+  padding-bottom: 2%;
+  background: rgb(68, 21, 68);
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+}
+.gototop {
+  padding-top: 1%;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1%;
+}
+.gototop a {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 23px;
+}
+.gototop a:hover {
+  font-size: 25px;
+}
+.Mainbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.Mainbox a {
+  text-decoration: none;
+}
+.Mainbox a h5 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: aliceblue;
+}
+.Mainbox a h5:hover {
+  font-weight: 12px;
+  cursor: pointer;
+}
+.Mainbox h3 {
+  padding-top: 2%;
+  padding-bottom: 3%;
+  font-weight: 23px;
+  text-decoration: underline;
+}
+.copyright {
+  padding-top: 1%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------To make it responcive------------- */
+@media screen and (max-width: 760px) {
+  .gototop a h3 {
+    font-size: 18px;
+  }
+  .Mainbox a h3 {
+    font-size: 15px;
+  }
+  .Mainbox a h5 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .gototop a h3 {
+    font-size: 15px;
+  }
+  .Mainbox a h3 {
+    font-size: 14px;
+  }
+  .Mainbox a h5 {
+    font-size: 11px;
+  }
+}

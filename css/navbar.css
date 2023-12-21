@@ -1,0 +1,218 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:ital@1&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:ital,wght@1,100;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+header{
+    background: rgb(68, 21, 68);
+    height: 260px;
+    color: aliceblue;
+}
+a:hover{
+    font-size: 25px ;
+    cursor: pointer;
+}
+
+/* ------------------For Position 1--------------- */
+.portion{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 3%;
+}
+.portion1{
+    padding-top: 3%;
+    display: flex;
+    align-items: center;
+}
+.portion1 img{
+    border-radius: 50%;
+}
+.portion1 h1{
+    height: 30px;
+    padding-left: 2%;
+}
+
+/* -------------------For Position 2--------------- */
+.portion2{
+    padding-right: 1%;
+}
+.portion2 .icons{
+    padding-left: 50%;
+    justify-content: space-between;
+}
+.icons span:hover{
+    padding-left: 4%;
+    padding-right: 4%;
+    cursor: pointer;
+}
+#S-icon{
+    visibility: hidden;
+}
+#menubutton{
+    visibility: hidden;
+}
+.portion2 .search span{
+    position: absolute;
+}
+.portion2 .search span:hover{
+    padding-right: 2%;
+    cursor: pointer;
+}
+#search-area{
+    width: 350px;
+    height: 25px;
+    border-radius: 5%;
+}
+
+.pages{
+    padding-top: 4%;
+}
+.pages ul{
+    padding-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+}
+.pages ul a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+hr{
+    color: aliceblue; 
+    padding-left: 2%;
+    padding-right: 2%;  
+}
+nav{
+    position: fixed;
+}
+.items{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+}
+.items ul{
+    padding-top:2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 24px;
+}
+.items ul a{
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.sidebar{
+    padding-left: 5%;
+    height: 180px;
+    width: 160px;
+    background: rgb(233, 158, 233);
+    color: black;
+    border: 2px solid rgb(147, 30, 30);
+    z-index: 20;
+    position: absolute;
+    visibility: hidden;
+}
+.sidebartoggle{
+    visibility: visible;
+}
+.sidebarItems a{
+    font-size: 15px;
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.showSearchbar{
+    visibility: visible;
+    width: 150px;
+}
+
+
+
+/* ---------------------- To Make it Responsive------------------- */
+
+@media screen and (max-width: 760px){
+    #logoimg{
+        width:40px;
+    }
+    .portion1 h1{
+        font-size: 18px;
+    }
+    .portion2 .search{
+        visibility: hidden;
+    }
+    .portion2 .content{
+        visibility: hidden;
+    }
+    .portion2 .icons{
+        padding-left: 30%;
+        position: absolute;
+
+    }
+    #menubutton{
+        visibility: visible;
+    }
+    #S-icon{
+        visibility: visible;
+    }
+    .items ul{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 650px){
+    header{
+        height: 200px;
+    }
+} 
+
+@media screen and (max-width: 450px){
+    header{
+        height: 150px ;
+    }
+    #logoimg{
+        width:40px;
+    }
+    .portion1 h1{
+        font-size: 15px;
+    }
+    .portion2 .search{
+        visibility: hidden;
+    }
+    .portion2 .content{
+        visibility: hidden;
+    }
+    .portion2 .icons{
+        padding-left: 20%;
+        position: absolute;
+
+    }
+    #menubutton{
+        visibility: visible;
+    }
+    #searchicon{
+        visibility: visible;
+    }
+    .items ul{
+        font-size: 12px;
+    }
+}
+

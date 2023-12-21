@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:ital@1&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:ital,wght@1,100;1,500&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:ital@1&family=Oswald:wght@600&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:ital,wght@1,100;1,500&family=Whisper&display=swap');
+
+main{
+    
+    background: rgb(234, 232, 232);
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    padding:12px;
+    font-family: 'Nunito', sans-serif;
+}
+.heading{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    width: 70%;
+}
+
+/* For section-1---------- */
+
+.sec-1{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: justify;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sec-1 .part-1{
+    width: 60%;
+    padding-bottom: 2%;
+}
+.sec-1 .part-2{
+    width: 25%;
+    padding-bottom:2%;
+}
+.first{
+    padding: 2%;
+    background: rgb(205, 131, 205);
+    border-radius: 10px;
+    box-shadow:10;
+    margin: 15px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img img{
+    margin: 22px;
+    width: 220px;
+    overflow: hidden;
+}
+.img h1{
+    font-size: 23px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+}
+
+/* For section-2 --------- */
+
+.sec-2{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sec-3{ 
+    background: rgb(208, 206, 206);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.sec-3 img{
+    padding: 2%;
+    width: 90%;
+    height: 280px;
+    opacity: 0.7;
+}
+.absolute{
+    position: absolute;
+    display: flex;
+    flex-direction:row ;
+    width: 50%;
+    height: 120px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(1, 1, 1);
+    flex-wrap: wrap;
+}
+/* .sec-4 div{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+}   */
+
+
+
+/* To make it responsive--------- */
+
+/* SECTION-1 */
+@media only screen and (max-width:850px){
+    
+    .sec-1 .part-1{
+        width: 45%;
+    }
+    .sec-1 .part-2{
+        width:50% ;
+    }
+    .sec-3 h1{
+        font-size: 22px;
+    }
+    .sec-3 h2{
+        font-size: 18px;
+    }
+    .sec-3 img{
+        /* heigh */
+    }
+
+}
