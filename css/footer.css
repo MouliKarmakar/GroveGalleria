@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 footer {
   padding-bottom: 2%;
@@ -17,13 +18,15 @@ footer {
   align-items: center;
   padding-bottom: 1%;
 }
-.gototop a {
-  color: aliceblue;
-  text-decoration: none;
-  font-weight: 23px;
+.gototop #mybtn2 {
+  background: rgb(177, 18, 122);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
 }
-.gototop a:hover {
-  font-size: 25px;
+.gototop #mybtn2:hover {
+  background:rgb(205, 57, 153);
 }
 .Mainbox {
   display: flex;
