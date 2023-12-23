@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GroveGalleria-login</title>
+    <title>GroveGalleria-signup</title>
     <script
       src="https://kit.fontawesome.com/099288c644.js"
       crossorigin="anonymous"
@@ -29,8 +29,7 @@
       <div class="container">
         <div class="form-container sign-in">
           <form action="sign-in" method="post">
-            <h1>Already have An Account</h1>
-            <h2>Well come Back!</h2>
+            <h1>Create An Account</h1>
             <div class="social-icons">
               <a href="" class="icon"
                 ><i class="fa-brands fa-google-plus-g"></i
@@ -43,13 +42,18 @@
                 ><i class="fa-brands fa-linkedin-in"></i
               ></a>
             </div>
-            <span>or use your email for sign-in:</span>
+            <span>or use your email for sign-up:</span>
 
+            <input
+              class="required"
+              type="text"
+              placeholder="Enter name"
+              required
+            />
             <!-- <label for="email">Email</label> -->
             <input
               class="required"
               type="email"
-              name="name"
               placeholder="Enter email"
               required
             />
@@ -57,11 +61,10 @@
             <input
               class="required"
               type="password"
-              name="name"
               placeholder="Enter password"
               required
             />
-            <button class="shown" type="submit">Sign in</button>
+            <button class="shown" type="submit">Sign up</button>
           </form>
         </div>
 
@@ -70,10 +73,10 @@
             <input type="checkbox" name="" id="" required/>
             <label for="checkbox"><span>Remember me</span></label>
           </div>
-          <a href="">Forget password?</a>
+          <!-- <a href="">Forget password?</a> -->
         </div>
         <div class="sub-container2">
-          <span>Don't Have an account? </span> <a href="./sign-up.html">Register yourself</a>
+          <span>Already Have an account? </span> <a href="./login.html">Login yourself</a>
         </div>
       </div>
     </main>
