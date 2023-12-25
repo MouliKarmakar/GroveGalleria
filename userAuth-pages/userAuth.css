@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -23,6 +24,10 @@ nav{
     box-shadow: 32px 0 18px 0 rgb(16, 15, 15);
     padding-left: 2%;
     
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
 }
 .logo{
     display: flex;
@@ -94,7 +99,7 @@ span{
 .container .required:hover{
     width: 92%;
 }
-.container button{
+ button{
     cursor: pointer;
     font-size: 15px;
     color: white;
@@ -105,7 +110,7 @@ span{
     border: transparent;
     text-transform: uppercase;
 }
-.container button:hover{
+ button:hover{
     opacity: 0.8;
 }
 .social-icons{
@@ -139,8 +144,44 @@ span{
     margin-top: 16px;
 }
 
-
-
+/* --------------Styling the popup ------------- */
+.popup-box{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    background-color: rgb(253, 253, 253);
+    text-align: center;
+    border-radius: 20px;
+    z-index: 99;
+    box-shadow: 10px 4px 8px 2px rgb(60, 58, 58);
+    visibility: hidden;
+    transition: all 0.4s ease-out;
+}
+.popup-box img{
+    width: 40%;
+    background: transparent;
+}
+.popup-box h2{
+    font-weight: 5rem;
+    letter-spacing: 0.5px;
+    font-size: 27px;
+    margin: 12px;
+}
+.popup-box p{
+    letter-spacing: 0.3px;
+    line-height: 22px;
+    margin-bottom: 12px;
+    font-weight: bolder;
+}
+.popup-box button{
+    margin-bottom: 12px;
+}
+.open-popup{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
 
 
 

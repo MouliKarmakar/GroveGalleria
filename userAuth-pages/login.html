@@ -14,7 +14,7 @@
     <header>
       <nav>
         <div class="logo">
-          <i class="fa-solid fa-arrow-left"></i>
+          <a href="../html main/index.html"><i class="fa-solid fa-arrow-left"></i></a>
           <img
                 id="logoimg"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRS-SBB8tQLvun43M_HKJhggPcY-v7kwzFHg&usqp=CAU"
@@ -28,7 +28,7 @@
     <main>
       <div class="container">
         <div class="form-container sign-in">
-          <form action="sign-in" method="post">
+          <form action="sign-in" method="post" >
             <h1>Already have An Account</h1>
             <h2>Well come Back!</h2>
             <div class="social-icons">
@@ -44,8 +44,6 @@
               ></a>
             </div>
             <span>or use your email for sign-in:</span>
-
-            <!-- <label for="email">Email</label> -->
             <input
               class="required"
               type="email"
@@ -53,7 +51,6 @@
               placeholder="Enter email"
               required
             />
-            <!-- <label for="password">Password</label> -->
             <input
               class="required"
               type="password"
@@ -61,7 +58,7 @@
               placeholder="Enter password"
               required
             />
-            <button class="shown" type="submit">Sign in</button>
+            <button id="open-popup" type="submit">Sign in</button>
           </form>
         </div>
 
@@ -76,6 +73,14 @@
           <span>Don't Have an account? </span> <a href="./sign-up.html">Register yourself</a>
         </div>
       </div>
+      <div class="popup-box" id="popup">
+        <img src="https://achildofmine.org.uk/wp-content/uploads/Capture.png" alt="">
+        <h2>Well Come!</h2>
+        <p>You have been successfully login to your account</p>
+        <button type="button" id="close-popup">OK</button>
+      </div>
     </main>
+
+    <script src="./useAuth.js"></script>
   </body>
 </html>
